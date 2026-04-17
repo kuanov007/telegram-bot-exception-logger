@@ -1,0 +1,9 @@
+telegram:
+  bot:
+    enabled: true
+    token: "YOUR_BOT_TOKEN"
+    chat-id: "YOUR_CHAT_ID"
+
+spring:
+  application:
+    name: "MyAwesomeService"
