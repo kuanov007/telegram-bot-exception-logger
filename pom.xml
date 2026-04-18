@@ -9,11 +9,18 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>uz.swe</groupId>
-    <artifactId>telegram-error-notifier</artifactId>
-    <version>1.0.0</version>
-    <name>telegram-exception-logger-spring-boot-starter</name>
+    <artifactId>telegram-bot-exception-logger</artifactId>
+    <version>1.0.6</version>
+    <name>telegram-exception-logger</name>
     <description>Starter for logging exceptions to Telegram</description>
-    <url/>
+
+    <url>https://github.com/kuanov007/telegram-bot-exception-logger</url>
+
+    <scm>
+        <connection>scm:git:git://github.com/kuanov007/telegram-bot-exception-logger.git</connection>
+        <developerConnection>scm:git:ssh://github.com:kuanov007/telegram-bot-exception-logger.git</developerConnection>
+        <url>https://github.com/kuanov007/telegram-bot-exception-logger/tree/main</url>
+    </scm>
 
     <distributionManagement>
         <repository>
@@ -22,6 +29,16 @@
             <url>https://maven.pkg.github.com/kuanov007/telegram-bot-exception-logger</url>
         </repository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/kuanov007/telegram-bot-exception-logger</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -50,11 +67,6 @@
             <optional>true</optional>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
