@@ -22,4 +22,5 @@ public class TelegramExceptionLoggerAutoConfiguration {
     public TelegramService telegramService(TelegramProperties properties) {
         return new TelegramService(properties);
     }
+
 }
